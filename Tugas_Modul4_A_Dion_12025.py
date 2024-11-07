@@ -46,13 +46,12 @@ if uploaded_file is not None:
     input_data = pd.read_csv(uploaded_file)
     st.markdown("<h1 style='text-align: center;'>Unsupervised Learning - Dion</h1>", unsafe_allow_html=True)
     st.dataframe(input_data)
-    
-model_path = r'C:\Users\Asus\Downloads\Unsupervised Learning (Praktek)\Unsupervised Learning (Praktek)\Tugas4_A_12025'
+
 
 model_paths = {
-    "AGG_model": os.path.join(model_path, 'AGG_model.pkl'),
-    "KMeans_model": os.path.join(model_path, 'KMeans_model.pkl'),
-    "DBSCAN_model": os.path.join(model_path, 'DBSCAN_model.pkl'),
+    "AGG_model": 'AGG_model.pkl',
+    "KMeans_model": 'KMeans_model.pkl',
+    "DBSCAN_model": 'DBSCAN_model.pkl',
 }
 
 models = {}
