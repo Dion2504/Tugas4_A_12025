@@ -34,7 +34,7 @@ def scatter(model, model_name, data, new_point, features, color_scale, title):
     return fig, new_cluster
 
 st.set_page_config(
-    page_title="12045 - Unsupervised Learning",
+    page_title="12025 - Unsupervised Learning",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -44,7 +44,7 @@ uploaded_file = st.sidebar.file_uploader("Upload your input CSV file", type=["cs
 
 if uploaded_file is not None:
     input_data = pd.read_csv(uploaded_file)
-    st.markdown("<h1 style='text-align: center;'>Unsupervised Learning - Saty</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>Unsupervised Learning - Dion</h1>", unsafe_allow_html=True)
     st.dataframe(input_data)
     
 model_path = r'C:\Users\Asus\Downloads\Unsupervised Learning (Praktek)\Unsupervised Learning (Praktek)\Tugas4_A_12025'
